@@ -1,10 +1,13 @@
 import { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
+import { useRouter } from "expo-router";
 
 export default function Rectangle(){
     //พท.สี่เหลี่ยม = กว้าง * ยาว
     //     60   = 6 * 10
     //output    = input * input
+
+    const router = useRouter()
 
     const [area,setArea]= useState(0)
     const [width , setWidth]=useState(0)
@@ -49,6 +52,7 @@ export default function Rectangle(){
             />
         
             <Button title="คำนวณ" onPress={()=> rectangleCal()}/>
+            <Button title="หน้าถัดไป" onPress={()=> router.navigate('/kilomate_mate')}/>
         
         </View>
     )
