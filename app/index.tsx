@@ -7,6 +7,7 @@ export default function App(){
 
     return (
         <View style={styles.box}>
+            <Text style={styles.textTitle}>โปรแกรมสำหรับคำนวณ</Text>
             <Text style={styles.textTitle}>Home</Text>
             <Button title="ไปหน้า 2" onPress={()=> router.navigate('/rectangle')}/>
         </View>
@@ -18,7 +19,8 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor:"black",
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        gap:15
     },
     textTitle:{
         fontSize:22,

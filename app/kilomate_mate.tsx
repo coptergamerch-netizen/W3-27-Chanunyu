@@ -22,23 +22,24 @@ export default function Kilomate_Mate(){
             <Text style={styles.textTitle}>คำนวณกิโลเมตร เป็น เมตร</Text>
             {/* <Button title="ไปหน้า 2"/> */}
 
-            <Text>
+            <Text style={styles.textTitle}>
                 Kilomate is {kilomate}
             </Text>
 
-            <Text>
+            <Text style={styles.textTitle}>
                 Mate is {mate}
             </Text>
 
             <TextInput 
                 style={styles.TextInput} 
                 placeholder="กรอกจำนวณเป็นกิโลเมตร" 
-                placeholderTextColor="gray"
+                placeholderTextColor="white"
                 value={kilomate.toString()}
                 onChangeText={(K)=> setKilomate(Number(K))}
             />
         
             <Button title="คำนวณ" onPress={()=> Mate()}/>
+            <Button title="กลับไปหน้าแรก" onPress={()=> router.navigate('./')}/>
         
         </View>
     )
@@ -47,7 +48,7 @@ export default function Kilomate_Mate(){
 const styles = StyleSheet.create({
     box:{
         flex: 1,
-        backgroundColor:"lightgray",
+        backgroundColor:"black",
         justifyContent:"center",
         alignItems:"center",
         gap:20
