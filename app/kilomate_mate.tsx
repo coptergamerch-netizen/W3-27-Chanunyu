@@ -1,6 +1,6 @@
+import { useRouter } from "expo-router";
 import { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
-import { useRouter } from "expo-router";
 
 export default function Kilomate_Mate(){
     //พท.สี่เหลี่ยม = กว้าง * ยาว
@@ -48,7 +48,7 @@ export default function Kilomate_Mate(){
 const styles = StyleSheet.create({
     box:{
         flex: 1,
-        backgroundColor:"black",
+        backgroundColor:"lightgray",
         justifyContent:"center",
         alignItems:"center",
         gap:20
@@ -56,7 +56,7 @@ const styles = StyleSheet.create({
     textTitle:{
         fontSize:22,
         fontWeight:700,
-        color:"white"
+        color:"black"
     },
     TextInput:{
         borderWidth:1,
